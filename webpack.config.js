@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const TestPlugin = require('./plugin/TestPlugin') ;
 var config = {
 	module: {
 		rules: [{
@@ -11,6 +12,7 @@ var config = {
     plugins: [
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({ template: 'index.html' }),
+      new TestPlugin()
     ]
 }
 
