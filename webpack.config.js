@@ -12,7 +12,10 @@ var config = {
     plugins: [
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({ template: 'index.html' }),
-      new TestPlugin()
+      new TestPlugin({
+        filename:'test.js',
+        template:path.resolve(__dirname,'./otherFile/test.js')
+      })
     ]
 }
 

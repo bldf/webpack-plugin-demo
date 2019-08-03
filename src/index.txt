@@ -1,2 +1,2 @@
-
-module.exports ={test:'999'}
+const item = {test:'999'} ; 
+module.exports = item; 
